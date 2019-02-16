@@ -1,4 +1,4 @@
 // tests go here; this will not be compiled when this package is used as a library
-FONT3DOTS.showNumber(12345)
-basic.pause(100)
-FONT3DOTS.showString(" !" + '"' + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~")
+FONT3DOTS.showString("\b\t\n\v\f\r`", 200, -1, 0)
+basic.pause(1000)
+//FONT3DOTS.showString(" !" + '"' + "#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~", 200, -1, 0)
