@@ -68,6 +68,56 @@ namespace FONT3DOTS {
         showString(Math.roundWithPrecision(n, 2).toString(), ss)
     }
     /**
+     * TODO:時刻を表示する
+     * @param h 時。, eg: 3
+     * @param m 分。, eg: 26
+     */
+    //% block
+    export function showTime(h: number, m: number): void {
+        showString(h.toString() + ":" + (m < 10 ? "0" : "") + m.toString(),200)
+    }
+    /**
+     * TODO:日付を表示する
+     * @param m 月。, eg: 3
+     * @param d 日。, eg: 14
+     */
+    //% block
+    export function showDate(m: number, d: number): void {
+        showString(m.toString() + "\t" + (d < 10 ? "0" : "") + d.toString() + "\b", 200)
+    }
+    /**
+     * TODO:曜日を表示する
+     * @param w 曜日。, eg: 3
+     */
+    //% block
+    export function showWeekday(w: number): void {
+        let weekday:string
+        switch(w){
+            case 0:
+                weekday="\b"
+                break
+            case 1:
+                weekday = "\t"
+                break
+            case 2:
+                weekday = "\n"
+                break
+            case 3:
+                weekday = "\v"
+                break
+            case 4:
+                weekday = "\f"
+                break
+            case 5:
+                weekday = "\r"
+                break
+            case 6:
+                weekday = "`"
+                break
+        }
+        showString(weekday, 0)
+    }
+    /**
      * TODO:スクリーンをスクロールする
      * @param n スクロール桁数。, eg: -1
      */
